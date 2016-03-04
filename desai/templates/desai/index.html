@@ -30,7 +30,7 @@
 					<li class="splash">
 						<a href="#splash">
 							<div id="profile_photo">
-								<img src="{% static 'desai/assets/images/display_picture.jpg' %}" alt="Title">
+								<img src="{% static 'desai/assets/images/formal.jpg' %}" alt="Title">
 							</div>
 							<div id="profile_name">
 								<div id="author_name">
@@ -47,17 +47,17 @@
 					</li>
 					<li class="profile">
                         <a href="#profile">
-                            <span class="icon"><i class="material-icons">account_box</i></span>
+                            <span class="icon"><i class="material-icons tab-icons">face</i></span>
                         </a>
                     </li>
 					<li class="skills">
                         <a href="#skills">
-                            <span class="icon"><i class="material-icons">assessment</i></span>
+                            <span class="icon"><i class="material-icons tab-icons">assessment</i></span>
                         </a>
                     </li>
 					<li class="contacts">
                         <a href="#contacts">
-                            <span class="icon"><i class="material-icons">textsms</i></span>
+                            <span class="icon"><i class="material-icons tab-icons">textsms</i></span>
                         </a>
                     </li>
 				</ul>
@@ -67,174 +67,162 @@
 					<div id="splash" class="tab_content"><!-- Main page -->
 						<div class="author_info">
 							<div class="user_desc">
-                                &ldquo;To work in an organization where I'm able to showcase my knowledge and experinces in project management and IT&rdquo;
+                                <i class="fa fa-quote-left"></i>
+                                &nbsp;
+                                To work in an organization where I'm able to showcase my knowledge and experinces in project management and IT
+                                &nbsp;
+                                <i class="fa fa-quote-right"></i>
                                 <ul>
                                     <li>
                                         <span>organized</span>
-                                        <i class="material-icons">done</i>
+                                        <i class="material-icons tick">done</i>
                                     </li>
                                     <li>
                                         <span>hardworking</span>
-                                        <i class="material-icons">done</i>
+                                        <i class="material-icons tick">done</i>
                                     </li>
                                     <li>
                                         <span>ethical</span>
-                                        <i class="material-icons">done</i>
+                                        <i class="material-icons tick">done</i>
                                     </li>
                                 </ul>
                             </div>
 							<div class="phone_num">
-								<i class="material-icons">call</i>
-								<span class="phone">+1 (469) 951-6232</span>
+								<i class="material-icons circle green">call</i>
+								<a href="tel:+1 469-951-6232" class="phone">+1 (469) 951-6232</a>
 							</div>
 							<div class="addition">
 								<a href="mailto:omkar.desai@utdallas.edu" class="email">omkar.desa@utdallas.edu</a>
 							</div>
 						</div>
 					</div><!-- /Main Page -->
-					<div id="resume" class="tab_content"><!-- Resume Section -->
-						<div class="section-header opened">
-							<a href="#" class="section_toggle"><span><img src="images/section_toggle.png" height="78" width="48" alt="Title Example"></span></a>
-							<h2 class="section-title icon2">
-								<span class="icon category1"></span>
-								Employment
+					<div id="resume" class="tab_content">
+                        <div class="section-header">
+                            <a href="#" class="section_toggle">
+                                <span><img src="{% static 'desai/assets/images/section_toggle.png'  %}"></span>
+                            </a>
+                            <h2 class="section-title">
+                                <i class="material-icons bigcircle green">accessibility</i>
+								<label>Personal Infomation</label>
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <article class="post resume_post resume_post_1">
+                                <div class="extra_wrap" style="padding-top: 0px">
+                                    <div class="resume_header">
+                                        <h4 class="post_title">Omkar Raghuvir Desai</h4>
+                                    </div>
+                                    <div class="resume_content">
+                                        <div style="padding-left: 50px;">
+                                            <strong>Date of birth: </strong>
+                                            <em>14<sup>th</sup> August, 1991</em><br>
+                                            <strong>Nationality:</strong>
+                                            <em>Indian</em><br>
+                                            <strong>Hometown:</strong>
+                                            <em>Goa, India</em><br>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+						<div class="section-header">
+							<a href="#" class="section_toggle">
+                                <span><img src="{% static 'desai/assets/images/section_toggle.png'  %}"></span>
+                            </a>
+							<h2 class="section-title">
+								<i class="material-icons bigcircle blue">work</i>
+								<label>Employment</label>
 							</h2>
 						</div>
 						<div class="section-content">
-							<!-- Resume Post -->
-							<article class="post resume_post resume_post_1 first odd">
+							<article class="post resume_post resume_post_1">
 								<div class="resume_period category1">
-									<span class="period_from">2005</span>
-									<div class="period_to">2007</div>
+									<span class="period_from">2013</span>
+									<div class="period_to">2015</div>
 								</div>
 								<div class="extra_wrap">
 									<div class="resume_header">
-										<h4 class="post_title">
-											<span class="post_title_icon category1 icon2"></span>
-											commodo consequat
-										</h4>
-										<h5 class="resume_position category1">
-											<span class="icon icon2"></span>
-											Web Designer
-										</h5>
+										<div class="resume_position category1">
+											<i class="fa fa-desktop fa-2x"></i>
+                                            <span class="big">Software Engineer</span>
+                                            <span class="small">Sanvik Computer Consultants</span>
+										</div>
 									</div>
 									<div class="resume_content">
-										<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                                        <ul>
+                                            <li>Led web developer for the Web development and Android department.</li>
+                                            <li>Attend client meetings, gather requirements, design and build solutions with responsive web designs using PHP (HMVC Frameworks) and HTML CSS (Bootstrap).</li>
+                                            <li>Apache Solr for quicker website searches.</li>
+                                            <li>Organize and use customer data for suggestive/predictive buying.</li>
+                                            <li>Develop RESTful web services for Android and iOS platforms and various dashboards with graphs and charts for client companies.</li>
+                                        </ul>
 									</div>
 								</div>
 							</article>
-							<!-- /Resume Post -->
-							<!-- Resume Post -->
-							<article class="post resume_post resume_post_2 even">
-								<div class="resume_period category1">
-									<span class="period_from">2009</span>
-									<div class="period_to">2012</div>
-								</div>
-								<div class="extra_wrap">
-									<div class="resume_header">
-										<h4 class="post_title">
-											<span class="post_title_icon category1 icon2"></span>
-											sed do eiusmod
-										</h4>
-										<h5 class="resume_position category1">
-											<span class="icon icon2"></span>
-											senior designer
-										</h5>
-									</div>
-									<div class="resume_content">
-										<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-									</div>
-								</div>
-							</article>
-							<!-- /Resume Post -->
-							<!-- Resume Post -->
-							<article class="post resume_post resume_post_2 odd">
-								<div class="resume_period category1">
-									<span class="period_from">2012</span>
-									<div class="period_to period_present">present</div>
-								</div>
-								<div class="extra_wrap">
-									<div class="resume_header">
-										<h4 class="post_title">
-											<span class="post_title_icon category1 icon2"></span>
-											commodo consequat
-										</h4>
-										<h5 class="resume_position category1">
-											<span class="icon icon2"></span>
-											art director
-										</h5>
-									</div>
-									<div class="resume_content">
-										<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-									</div>
-								</div>
-							</article>
-							<!-- /Resume Post -->
 						</div>
-						<div class="section-header opened">
-							<a href="#" class="section_toggle"><span><img src="images/section_toggle.png" height="78" width="48" alt="Title Example"></span></a>
-							<h2 class="section-title icon2">
-								<span class="icon category2"></span>
-								Education
+						<div class="section-header">
+                            <a href="#" class="section_toggle">
+                                <span><img src="{% static 'desai/assets/images/section_toggle.png'  %}"></span>
+                            </a>
+							<h2 class="section-title">
+								<i class="material-icons bigcircle green">book</i>
+								<label>Education</label>
 							</h2>
 						</div>
 						<div class="section-content">
-							<!-- Resume Post -->
-							<article class="post resume_post resume_post_2 odd">
+							<article class="post resume_post resume_post_1">
 								<div class="resume_period category2">
-									<span class="period_from">2002</span>
-									<div class="period_to">2005</div>
+									<span class="period_from">2015</span>
+									<div class="period_to">Present</div>
 								</div>
 								<div class="extra_wrap">
 									<div class="resume_header">
-										<h4 class="post_title">
-											<span class="post_title_icon category2 icon3"></span>
-											consectetur adipisicing elit
-										</h4>
-										<h5 class="resume_position category2">
-											<span class="icon icon2"></span>
-											Web design
-										</h5>
+										<div class="resume_position category2">
+											<i class="fa fa-university fa-2x"></i>
+                                            <span class="big">University of Texas at Dallas</span>
+                                            <span class="small">3.89 / 4.00</span>
+										</div>
 									</div>
 									<div class="resume_content">
-										<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <h4>Master of Science | Infomation Technology and Management</h4>
+                                        <ul class="utd">
+                                            <li>
+                                                Fall 2015: Agile Project Management; Organizational Behavior; Quantitative Introduction to Risk and Uncertainty in Business
+                                            </li>
+                                            <li>
+Spring 2016: Management and Organizational Consulting; Enterprise  Architecture; Marketing Management
+                                            </li>
+                                        </ul>
 									</div>
 								</div>
 							</article>
-							<!-- /Resume Post -->
-							<!-- Resume Post -->
-							<article class="post resume_post resume_post_2 even">
+                            <article class="post resume_post resume_post_1">
 								<div class="resume_period category2">
-									<span class="period_from">2007</span>
-									<div class="period_to">2009</div>
+									<span class="period_from">2015</span>
+									<div class="period_to">Present</div>
 								</div>
 								<div class="extra_wrap">
 									<div class="resume_header">
-										<h4 class="post_title">
-											<span class="post_title_icon category2 icon3"></span>
-											sed do eiusmod
-										</h4>
-										<h5 class="resume_position category2">
-											<span class="icon icon2"></span>
-											Graphic design
-										</h5>
+										<div class="resume_position category2">
+											<i class="fa fa-graduation-cap fa-2x"></i>
+                                            <span class="big">Goa University</span>
+										</div>
 									</div>
 									<div class="resume_content">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        <h4>Bachelor of Engineering | Information Technology</h4>
 									</div>
 								</div>
 							</article>
-							<!-- /Resume Post -->
-							<!-- Resume Post -->
 						</div>
-						<div class="section-header widgets_section opened">
-							<a href="#" class="section_toggle"><span><img src="images/section_toggle.png" height="78" width="48" alt="Title Example"></span></a>
-							<h2 class="section-title icon2">
-								<span class="icon"></span>
-								Skills
+                        <div class="section-header">
+                            <a href="#" class="section_toggle">
+                                <span><img src="{% static 'desai/assets/images/section_toggle.png'  %}"></span>
+                            </a>
+							<h2 class="section-title">
+								<i class="material-icons bigcircle navy">group_work</i>
+								<label>Skills</label>
 							</h2>
 						</div>
-						<div class="skills_sidebar_section">
+						<div class="section-content">
 							<!-- Skills widget -->
 							<aside class="widget-even widget widget_skills">
 								<h3 class="widget_title">Programming Skills</h3>

@@ -1,0 +1,185 @@
+.gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div { font-size: 10px; }
+.gm-style { font-family: Roboto, Arial, sans-serif; font-size: 11px; font-weight: 400; text-decoration: none; }
+.gm-style img { max-width: none; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0px; font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; }
+html { overflow-y: scroll; }
+body { height: 100%; font-family: Lato, sans-serif; font-size: 16px; line-height: 20px; color: rgb(102, 102, 102); position: relative; background: url("../images/pattern.png") repeat; }
+h1 { font-size: 20px; line-height: 24px; margin-bottom: 10px; }
+h2 { font-size: 18px; line-height: 21px; margin-bottom: 10px; }
+h3 { font-size: 17px; line-height: 21px; margin-bottom: 10px; }
+h4 { font-size: 16px; line-height: 20px; margin-bottom: 10px; }
+h5 { font-size: 15px; line-height: 20px; margin-bottom: 10px; }
+h6 { font-size: 14px; line-height: 17px; margin-bottom: 10px; }
+.extra_wrap { overflow: hidden; }
+input[type="text"], input[type="search"], input[type="password"], textarea { line-height: 15px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; padding: 8px 10px; border: 2px solid rgb(229, 229, 229); border-radius: 2px; background: rgb(245, 245, 245); }
+input[type="submit"] { border: 2px solid rgb(229, 229, 229); color: rgb(177, 177, 177); font-weight: 700; text-transform: uppercase; font-family: Lato, sans-serif; cursor: pointer; font-size: 12px; height: 27px; padding: 0px 7px 2px; line-height: 29px; box-sizing: content-box; border-radius: 3px; background: rgb(255, 255, 255); }
+input[type="submit"]:hover { color: rgb(177, 177, 177); background: rgb(229, 229, 229); }
+form label { cursor: pointer; }
+form label.required { position: relative; }
+form label.required::after { content: "*"; position: absolute; top: -2px; right: -12px; color: rgb(188, 58, 58); font-size: 18px; line-height: 22px; font-weight: 400; }
+textarea { overflow: auto; resize: none; }
+::selection { color: rgb(255, 255, 255); background: rgb(22, 165, 215); }
+a { color: rgb(22, 165, 215); }
+a:hover { color: rgb(100, 100, 100); }
+strong { font-weight: 700; }
+a img { border: none; }
+#page { margin: 0px auto; max-width: 900px; padding: 150px 0px 100px; vertical-align: middle; width: 100%; }
+#nav_tabs { overflow: hidden; }
+#nav_tabs li { float: left; width: 150px; list-style: none; }
+#nav_tabs li.splash { width: auto; }
+#nav_tabs li a { display: block; position: relative; transition: color 0.4s ease, background 0.4s ease; color: rgb(255, 255, 255); text-decoration: none; }
+#nav_tabs li.profile a { background: rgb(80, 192, 233); }
+#nav_tabs li.skills a { background: rgb(168, 211, 36); }
+#nav_tabs li.contacts a { background: rgb(124, 175, 0); }
+#nav_tabs li a:hover, #nav_tabs li.current a { background: rgb(255, 255, 255) !important; }
+#nav_tabs li a span { font-size: 100px; line-height: 100px; display: block; text-align: center; overflow: hidden; font-weight: normal; }
+#nav_tabs li.skills a span { top: 25px; }
+#nav_tabs li a:hover, #nav_tabs li.current a { color: rgb(204, 204, 204); }
+#profile_photo { float: left; width: 150px; background: rgb(50, 50, 50); }
+#profile_photo img { vertical-align: top; width: 100%; height: auto; }
+#header { overflow: hidden; background: rgb(255, 255, 255); }
+#profile_name { color: rgb(255, 255, 255); float: left; width: 300px; background: none 0px 0px repeat scroll rgb(22, 165, 215); }
+#profile_name .name { font-weight: 700; line-height: 41px; margin-bottom: 5px; font-size: 40px; }
+#profile_name .profile_inner { padding: 10px; }
+#main { background: rgb(252, 252, 252); }
+#tab_section > .tab_content { display: none; }
+#tab_section #splash { overflow: hidden; background: rgb(255, 255, 255); }
+.author_info { overflow: hidden; padding: 30px 36px; text-align: center; }
+.author_info .user_desc { color: rgb(102, 102, 102); font-size: 24px; line-height: 29px; margin-bottom: 32px; padding-right: 40px; text-align: left; }
+.author_info > .user_desc > ul { list-style: none; padding: 20px; font-size: 20px; }
+.author_info > .user_desc > ul > li > span, i { line-height: 2em; vertical-align: top; }
+.author_info .material-icons { padding-top: 5px; }
+.phone_num .icon { width: 50px; height: 50px; display: inline-block; border-radius: 50px; background: rgb(80, 192, 233); }
+.phone_num .icon::after { display: block; text-align: center; color: rgb(255, 255, 255); font-size: 80px; line-height: 80px; margin-top: -14px; font-weight: normal; }
+.phone_num .phone { padding: 8px 0px 1px; display: block; font-size: 36px; line-height: 44px; color: rgb(168, 212, 36); }
+.phone_num a { text-decoration: blink; }
+.phone_num a:hover { text-decoration: underline; }
+.addition { padding-top: 4px; }
+.addition { margin-bottom: 42px; }
+.addition a { color: rgb(168, 212, 36); display: block; font-size: 16px; line-height: 20px; text-decoration: none; }
+.addition a:hover { text-decoration: underline; }
+.social_links .icon2 { background: rgb(0, 186, 255); }
+.social_links .icon3 { background: rgb(234, 76, 137); }
+#resume .section-header { cursor: pointer; padding: 50px 50px 40px; background: url("../images/line_hor.gif") 0px 100% repeat-x scroll rgb(255, 255, 255); }
+#resume .section-header .section_toggle { border-radius: 50px; display: block; float: right; height: 50px; text-align: center; transition: all 0.5s ease; width: 50px; background: none 0px 0px repeat scroll rgb(255, 255, 255); }
+#resume .section-header .section_toggle span { display: block; height: 24px; margin-top: 13px; overflow: hidden; }
+#resume .section-header .section_toggle span img { height: auto; transition: all 0.2s ease; vertical-align: top; width: 24px; }
+#resume .section-header:hover .section_toggle { background: rgb(238, 238, 238); }
+#resume .section-header.opened { background-image: none; }
+#resume .section-header h2 { color: rgb(153, 153, 153); font-size: 23px; font-weight: 700; line-height: 28px; overflow: hidden; padding: 10px 0px 12px; position: relative; text-transform: uppercase; }
+#resume .section-header h2 .icon { border-radius: 50px; display: block; height: 50px; left: 0px; overflow: hidden; position: absolute; top: 0px; width: 50px; }
+#resume .section-header h2 .icon::after { color: rgb(255, 255, 255); content: "e"; display: block; font-size: 80px; font-weight: normal; padding-top: 12px; text-align: center; text-transform: lowercase; }
+#resume .section-title label { position: absolute; top: 35%; padding-left: 20px; }
+.section-header .section-title .icon.category1 { background: rgb(80, 192, 233); }
+.section-header .section-title .icon.category2 { background: rgb(168, 211, 36); }
+#resume .section-header h2 .icon.category2::after { padding-top: 8px; content: "h"; }
+.resume_post { overflow: hidden; }
+#resume .resume_post.even { background: rgb(247, 247, 247); }
+.resume_post .resume_period { text-transform: uppercase; float: left; width: 150px; text-align: center; font-size: 16px; line-height: 19px; padding-top: 55px; border-right-width: 1px; border-right-style: solid; border-right-color: rgb(234, 234, 234); margin-right: -1px; }
+.resume_post .resume_period .period_to { display: block; font-weight: 700; }
+.resume_post .resume_period.category1 { color: rgb(80, 192, 233); }
+.resume_post .resume_period.category2 { color: rgb(124, 175, 0); }
+.resume_post .extra_wrap { padding: 31px 0px 0px 30px; border-left-width: 1px; border-left-style: solid; border-left-color: rgb(234, 234, 234); }
+.resume_post .extra_wrap .resume_header { overflow: hidden; font-size: 16px; line-height: 19px; text-transform: uppercase; font-weight: 700; color: rgb(51, 51, 51); padding-right: 32px; margin-bottom: 10px; }
+#resume .section-header { cursor: pointer; padding: 50px 50px 40px; background: url("../images/line_hor.gif") 0px 100% repeat-x rgb(255, 255, 255); }
+#resume .section-header.widgets_section { background: rgb(255, 255, 255); }
+#resume .section-header.opened .section_toggle span img { margin-top: -24px; }
+.resume_post .resume_header .post_title { float: left; box-sizing: border-box; width: 50%; padding: 10px 0px 0px 50px; position: relative; }
+.resume_post .resume_header .post_title .post_title_icon::after { display: block; content: "f"; font-weight: normal; text-transform: lowercase; color: rgb(255, 255, 255); text-align: center; font-size: 50px; padding-top: 7px; }
+.resume_post .resume_header .post_title .post_title_icon.icon3::after { content: "g"; }
+.resume_post .resume_header .post_title .post_title_icon.icon2::after { content: "f"; }
+.resume_post .resume_header .post_title .post_title_icon.icon1::after { content: "k"; }
+.resume_post .resume_content { padding: 0px 40px 31px 15px; }
+.resume_header .post_title_icon.category1 { background: rgb(80, 192, 233); }
+.resume_header .post_title_icon.category2 { background: rgb(124, 175, 0); }
+.resume_post .resume_header .resume_position { padding: 10px 0px 0px; box-sizing: border-box; position: relative; }
+.resume_post .resume_header .resume_position label { position: absolute; top: 40%; margin-left: 10px; }
+.resume_post .resume_header .resume_position .icon { position: absolute; display: block; width: 35px; height: 35px; border-radius: 35px; top: 3px; left: 0px; overflow: hidden; }
+.skills_sidebar_section { padding: 45px 46px 30px 50px; overflow: hidden; }
+.skills_sidebar_section aside.widget { float: left; margin: 0px 46px 20px 0px; width: 379px; }
+.skills_sidebar_section aside.widget.widget-odd { float: right; margin-right: 0px; }
+.skills_sidebar_section aside.widget h3 { color: rgb(51, 51, 51); font-size: 16px; font-weight: 700; line-height: 20px; margin-bottom: 16px; text-transform: uppercase; }
+.widget_skills .skills_row { margin-top: 1px; }
+.widget_skills .progress { box-sizing: border-box; border-radius: 3px; display: block; font-size: 16px; height: 35px; line-height: 20px; padding-top: 7px; text-align: left; width: 0px; }
+.widget_skills .progressbar { white-space: nowrap; }
+.widget_skills .caption { color: rgb(255, 255, 255); font-weight: bold; margin: 0px 0px 0px 12px; }
+.widget_skills .value { color: rgb(255, 255, 255); font-weight: 400; }
+.resume_buttons { overflow: hidden; padding: 43px 50px; text-align: center; background: none 0px 0px repeat scroll rgb(255, 255, 255); }
+#contact_form .enter, a.button_link { border-radius: 3px; color: rgb(255, 255, 255); float: right; font-size: 16px; font-weight: 700; line-height: normal; padding-bottom: 2px; text-decoration: none; text-transform: uppercase; vertical-align: top; background: none 0px 0px repeat scroll rgb(124, 175, 0); }
+#contact_form .enter span, a.button_link span { vertical-align: top; display: inline-block; padding: 8px 14px 9px; border-radius: 3px; background: rgb(168, 211, 36); }
+#contact_form .enter span, a.button_link span { border-radius: 3px; display: inline-block; padding: 8px 14px 9px; vertical-align: top; background: none 0px 0px repeat scroll rgb(168, 211, 36); }
+a.button_link.download { background: rgb(22, 165, 215); }
+a.button_link span { padding: 8px 0px 9px; text-align: center; width: 117px; }
+a.button_link.download span { background: rgb(80, 192, 233); }
+#contact_form .enter:hover span, a.button_link:hover span { background: none; }
+#contact_form .enter:active, a.button_link:active { box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 2px inset; }
+#skills .skills_items { overflow: hidden; }
+#skills_iso_filters { overflow: hidden; padding: 59px 50px 60px; background: rgb(255, 255, 255); }
+#skills_iso_filters li { list-style: none; float: left; font-size: 16px; line-height: 20px; font-weight: 700; text-transform: uppercase; margin-right: 1px; }
+#skills_iso_filters li a { text-decoration: none; color: rgb(102, 102, 102); display: inline-block; padding: 5px 10px 6px; border-radius: 2px; }
+#skills_iso_filters li a:hover { color: rgb(22, 165, 215); }
+#skills_iso_filters li a.current { color: rgb(255, 255, 255); background: rgb(22, 165, 215); }
+#skills .skills_items { overflow: hidden; }
+#skills .skills_items article.skills_post { float: left; width: 300px; height: 200px; overflow: hidden; background: rgb(50, 50, 50); }
+#skills .skills_items article.skills_post.hidden { display: none; }
+#skills .skills_items article.skills_post .caption { position: absolute; left: 29px; top: -125px; transition: all 0.6s cubic-bezier(0, 0.35, 0.5, 0.3); }
+#skills .skills_items article.skills_post .caption:hover { transition: all 0.3s ease; }
+#skills .skills_items article.skills_post .caption h4 { color: rgb(255, 255, 255); font-size: 16px; line-height: 20px; margin-bottom: 3px; }
+#skills .skills_items article.skills_post .caption h5 { font-size: 12px; font-weight: 700; text-transform: uppercase; line-height: 15px; }
+#skills .skills_items article.skills_post:hover .caption { top: 25px; }
+#skills .skills_items article.skills_post a { display: block; position: relative; color: rgb(124, 175, 0); }
+#skills .skills_items article.skills_post a img { vertical-align: top; }
+#skills .skills_items article.skills_post a .overlay { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0; transition: all 0.5s ease; background: url("../images/skills_overlay.png") 0px 0px repeat; }
+#skills .skills_items article.skills_post a:hover .overlay { opacity: 1; }
+#skills .skills_items article.skills_post a .link-icon { display: block; position: absolute; top: 50%; left: 50%; width: 30px; height: 30px; margin-top: -15px; margin-left: -15px; transform: rotate(-90deg) scale(0); transition: all 0.4s cubic-bezier(0, 0.35, 0.5, 1.3); opacity: 0; }
+#skills .skills_items article.skills_post a:hover .link-icon { opacity: 1; transform: rotate(0deg) scale(1); }
+#skills .skills_items article.skills_post.even { background: rgb(77, 77, 77); }
+#skills .skills_items article.skills_post .imposg-wrap img { width: 100%; height: auto; }
+#more_results { display: inline-block; padding-bottom: 2px; border-radius: 3px; font-size: 16px; line-height: 35px; text-transform: uppercase; text-decoration: none; font-weight: 700; color: rgb(255, 255, 255); background: rgb(124, 175, 0); }
+#more_results span { display: inline-block; padding: 0px 14px; height: 37px; border-radius: 3px; background: rgb(168, 211, 36); }
+#more_results:hover span { background: none; }
+#more_results:active { box-shadow: rgb(99, 140, 0) 0px 0px 0px 2px inset; background: rgb(123, 176, 0); }
+#more_results:active span { background: none; }
+#more_results.no_results { box-shadow: rgb(178, 178, 178) 0px 0px 0px 2px inset; background: rgb(204, 204, 204); }
+#more_results.no_results span { background: none; }
+#skills_load_more { padding: 30px; text-align: center; }
+.isotope-item { z-index: 2; }
+.isotope-hidden.isotope-item { pointer-events: none; z-index: 1; }
+.isotope, .isotope .isotope-item { transition-duration: 0.8s; }
+.isotope { transition-property: height, width; }
+.isotope .isotope-item { transition-property: transform, opacity; }
+.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition { transition-duration: 0s; }
+.map_wrap { position: relative; }
+.map_wrap .map_overlay { z-index: 999; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; background: url("../images/map_loader.gif") 50% 50% no-repeat rgb(255, 255, 255); }
+.map_wrap .address_block { position: absolute; bottom: 20px; left: 20px; height: 30px; font-size: 14px; line-height: 30px; color: rgb(22, 165, 215); z-index: 500; font-weight: 700; padding: 0px 12px; box-shadow: rgba(0, 0, 0, 0.2) -5px 9px 0px 0px; background: rgb(255, 255, 255); }
+.contacts_wrapper { position: relative; overflow: hidden; }
+.contacts_wrapper::after { position: absolute; top: 0px; bottom: 0px; left: 0px; right: 50%; content: ""; background: rgb(255, 255, 255); }
+.contacts_wrapper .col1 { float: left; width: 50%; }
+.contacts_wrapper .col1.fwidth { width: 100%; padding-bottom: 50px; float: none; }
+.contacts_wrapper .col2 { overflow: hidden; }
+.contacts_wrapper .col2 .inner { padding: 43px 50px 50px; }
+.contacts_wrapper .col1 { text-align: center; overflow: hidden; position: relative; z-index: 999; padding-top: 50px; }
+#contact_form label { display: table; font-size: 16px; color: rgb(51, 51, 51); line-height: 20px; margin-bottom: 6px; font-weight: 700; }
+#contact_form .field.message label { margin-bottom: 5px; }
+#contact_form .field { margin-bottom: 15px; }
+#contact_form .field.message { margin-bottom: 9px; }
+#contact_form input[type="text"], #contact_form textarea { padding: 10px 8px; box-sizing: border-box; width: 100%; border: 2px solid rgb(238, 238, 238); background: rgb(255, 255, 255); }
+#contact_form textarea { height: 112px; }
+#contact_form .button { overflow: hidden; }
+#contact_form .enter, a.button_link { float: right; padding-bottom: 2px; border-radius: 3px; font-size: 16px; line-height: normal; text-transform: uppercase; text-decoration: none; font-weight: 700; color: rgb(255, 255, 255); vertical-align: top; background: rgb(124, 175, 0); }
+a.button_link { display: inline-block; float: none; margin-right: 6px; }
+#contact_form .enter:active, a.button_link:active { box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 2px inset; }
+#contact_form .req { padding-top: 10px; overflow: hidden; font-size: 13px; line-height: 16px; font-style: italic; color: rgb(153, 153, 153); }
+form label.required { position: relative; }
+form label.required::after { content: "*"; position: absolute; top: -2px; right: -12px; color: rgb(188, 58, 58); font-size: 18px; line-height: 22px; font-weight: 400; }
+.contact_form h3 { margin-bottom: 24px; font-size: 23px; line-height: 28px; text-transform: uppercase; color: rgb(22, 165, 215); font-weight: 700; }
+.author_info .addition { margin-bottom: 0px; }
+.material-icons.tab-icons { font-size: 0.85em; padding-top: 10px; }
+.material-icons.tick { padding-top: 10px; }
+.material-icons.circle { font-size: 2em; color: rgb(255, 255, 255); padding: 8px; border-radius: 40px; }
+.material-icons.circle.blue { background-color: rgb(22, 165, 215); }
+.material-icons.circle.green { background-color: rgb(168, 212, 36); }
+.material-icons.bigcircle { font-size: 2em; color: rgb(255, 255, 255); padding: 15px; border-radius: 40px; }
+.material-icons.bigcircle.blue { background-color: rgb(22, 165, 215); }
+.material-icons.bigcircle.green { background-color: rgb(168, 212, 36); }
+.current_status { font-size: 1em; }
