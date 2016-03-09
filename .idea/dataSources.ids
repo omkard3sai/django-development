@@ -74,22 +74,26 @@
       <index name="auth_user_user_permissions_user_id_14a6b632_uniq" unique="true" columns="user_id,permission_id"/>
     </table>
     <table name="desai_skill" schema="" catalog="" type="TABLE">
-      <column name="skill_name" sqlType="VARCHAR(200)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
-      <column name="skill_date" sqlType="DATETIME" precision="0" scale="-1" nullable="false" jdbcType="12"/>
-      <column name="skill_priority" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
       <column name="skill_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="skill_name" sqlType="VARCHAR(200)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="skill_class" sqlType="VARCHAR(100)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="skill_categories" sqlType="VARCHAR(200)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="skill_priority" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="skill_date" sqlType="DATETIME" precision="0" scale="-1" nullable="false" jdbcType="12"/>
       <primary-key columns="skill_id"/>
     </table>
     <table name="desai_skilldetail" schema="" catalog="" type="TABLE">
-      <column name="detail_name" sqlType="VARCHAR(200)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
-      <column name="detail_description" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
-      <column name="detail_date" sqlType="DATETIME" precision="0" scale="-1" nullable="false" jdbcType="12"/>
-      <column name="skill_id_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
-      <column name="detail_priority" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
       <column name="detail_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="detail_name" sqlType="VARCHAR(200)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="detail_class" sqlType="VARCHAR(100)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="detail_categories" sqlType="VARCHAR(200)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="detail_description" sqlType="TEXT" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="detail_priority" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="detail_date" sqlType="DATETIME" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="skill_foreign_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
       <primary-key columns="detail_id"/>
-      <foreign-key name="#FAKE_desai_skilldetail_1" columns="skill_id_id" ref-table="desai_skill" ref-schema="" ref-catalog="" ref-columns="skill_id" update-rule="3" delete-rule="3" deferrability="1"/>
-      <index name="desai_skilldetail_9ba4c345" unique="true" columns="skill_id_id"/>
+      <foreign-key name="#FAKE_desai_skilldetail_1" columns="skill_foreign_id" ref-table="desai_skill" ref-schema="" ref-catalog="" ref-columns="skill_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <index name="desai_skilldetail_530ab863" unique="true" columns="skill_foreign_id"/>
     </table>
     <table name="django_admin_log" schema="" catalog="" type="TABLE">
       <column name="id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>

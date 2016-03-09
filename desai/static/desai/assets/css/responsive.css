@@ -140,7 +140,9 @@
    	.contacts_wrapper .col2 .inner {
    		padding: 35px 42px 42px;
    	}
-   	#toTop {display: none !important;}
+	#resume .section-title label {
+		top: 30%;
+	}
 }
 
 @media (max-width: 767px) {
@@ -208,6 +210,9 @@
 		width: 100%;
 		float: left;
 		margin: 0 0 45px 0;
+	}
+	#resume .section-header label {
+		top: 30%;
 	}
 }
 
@@ -308,7 +313,7 @@
 	#resume .section-header h2 {
 		font-size: 17px;
 		line-height: 26px;
-		padding: 5px 0 12px 45px;
+		padding: 5px 0 12px 0px;
 		margin-bottom: 0;
 	}
 	#resume .section-header {
@@ -404,6 +409,9 @@
 	}
 	#resume .section-header h2 .icon.category2:after {
 		padding-top: 3px;
+	}
+	#resume .section-header label {
+		top: 30%;
 	}
 }
 

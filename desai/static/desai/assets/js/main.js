@@ -1,19 +1,9 @@
 var curIsotopeFilter = '*';
 var curIsotopePage = '';
-var ppp = 6; /*Set number of items in skills*/
+var ppp = 99; /*Set number of items in skills*/
 
 jQuery(document).ready(function() {
-	var prettyPhotoObject = jQuery("a[rel^='prettyPhoto']");
-	// Pretty photo
-	prettyPhotoObject.click(function(e) {
-		if (jQuery(window).width()<480)	{
-			e.stopImmediatePropagation();
-			window.location = jQuery(this).attr('href');
-		}
-		e.preventDefault();
-		return false;
-	});
-	var src
+	var src = '0';
 	if(getCookie('body_bg')) {
 		src = getCookie('body_bg');
 		jQuery('body').css({'background':src});
@@ -28,40 +18,6 @@ jQuery(document).ready(function() {
 		jQuery('body').css({'background':'url('+src+')'}).removeClass('bg_img');
 	}
 
-	prettyPhotoObject.prettyPhoto({
-		markup: '<div class="pp_pic_holder"> \
-			<div class="ppt"></div> \
-			<div class="pp_content_container"> \
-				<div class="pp_left"> \
-				<div class="pp_right"> \
-					<div class="pp_content"> \
-						<div class="pp_loaderIcon"></div> \
-						<div class="pp_fade"> \
-							<div class="pp_nav"> \
-								<a href="#" class="pp_arrow_previous"><span></span></a> \
-								<a href="#" class="pp_arrow_next"><span></span></a> \
-							</div> \
-							<div id="pp_full_res"></div> \
-							<div class="pp_details"> \
-								<p class="pp_description"></p> \
-								<a class="pp_close" href="#"><span></span></a> \
-								<a href="#" class="pp_expand" title="Expand the image"><span></span></a> \
-							</div> \
-						</div> \
-					</div> \
-				</div> \
-				</div> \
-			</div> \
-		</div> \
-		<div class="pp_overlay"></div>',
-		social_tools: '',
-		theme: 'light_rounded',
-		deeplinking: false,
-		horizontal_padding: 0,
-		overlay_gallery: false
-	});
-
-
 	jQuery('#nav_tabs').tabs('#tab_section > .tab_content', {
 		tabs: 'section > .section_header > .section_title',
 			effect : 'slide',
@@ -69,7 +25,7 @@ jQuery(document).ready(function() {
 			slideDownSpeed: 1000,
 			initialIndex: 0,
 			onClick: function (e, tabIndex) {
-				var tabs = jQuery('#nav_tabs > li > a');
+				var tabs = jQuery("#nav_tabs > li > a");
 				var tab = tabs.eq(tabIndex);
 				if(tab.attr('href') === '#skills') {
 					if(tab.attr('href') === '#skills' && jQuery('.skills_items').length > 0) {
@@ -152,27 +108,6 @@ function getIsotopeFilter() {
 	flt += curIsotopePage!='' ? ((flt!='' ? '' : '') + curIsotopePage) : '';
 	flt=='' ? '*' : '';
 	return flt;
-}
-function pagesClear() {
-	jQuery('.skills_items article').removeClass('visible').removeClass('hidden');
-	jQuery("#skills_load_more").hide();
-	curIsotopePage = '';
-}
-function pagesBuild() {
-	var selector = '.skills_items article'+(curIsotopeFilter!='*' ? curIsotopeFilter : '');
-	var items = jQuery(selector);
-	var total = items.length;
-	jQuery("#skills_load_more").hide();
-	if (total > ppp) {
-		var pagesList = '<a href="#" data-filter=".visible" id="more_results"><span>More Results</span></a>';
-		items.each(function(idx, obj) {
-			var pg = Math.floor(idx/ppp)+1;
-			jQuery(obj).addClass(pg==1 ? 'visible' : 'hidden');
-		});
-		jQuery("#skills_load_more").show();
-		jQuery("#skills_load_more").html(pagesList);
-		curIsotopePage = '.visible';
-	}
 }
 function skills_anim(){
 	if(!jQuery('#page').hasClass('print')) {
