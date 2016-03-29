@@ -36,3 +36,13 @@ class SkillDetail(models.Model):
     detail_description = models.TextField(max_length=500, blank='TRUE', null='TRUE')
     detail_priority = models.IntegerField(default=99)
     detail_date = models.DateTimeField(default=timezone.now)
+
+
+class Feedback(models.Model):
+    def __str__(self):
+        return self.feedback_name
+
+    feedback_name = models.CharField(max_length=200)
+    feedback_email = models.CharField(max_length=200)
+    feedback_msg = models.CharField(max_length=500)
+    feedback_date = models.DateTimeField(default=timezone.now)

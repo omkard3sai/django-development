@@ -70,7 +70,7 @@
 							<div class="user_desc">
                                 <i class="fa fa-quote-left"></i>
                                 &nbsp;
-                                To work in an organization where I'm able to showcase my knowledge and experinces in project management and IT
+                                To work in an organization where I'm able to showcase my knowledge and experience in project management and IT
                                 &nbsp;
                                 <i class="fa fa-quote-right"></i>
                                 <ul>
@@ -79,7 +79,7 @@
                                         <i class="material-icons tick">done</i>
                                     </li>
                                     <li>
-                                        <span>hardworking</span>
+                                        <span>out-of-the-box</span>
                                         <i class="material-icons tick">done</i>
                                     </li>
                                     <li>
@@ -314,7 +314,8 @@ Spring 2016: Management and Organizational Consulting; Enterprise  Architecture;
 								<div class="inner">
 									<div class="contact_form">
 										<h3 class="title">Any questions?</h3>
-										<form id="contact_form" mathod="post">
+										<form id="contact_form" method="post">
+                                            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
 											<div class="field">
 												<label class="required" for="contact_form_username">Name</label>
 												<input id="contact_form_username" type="text" name="username">
@@ -379,28 +380,27 @@ Spring 2016: Management and Organizational Consulting; Enterprise  Architecture;
 													]
 												});
 												if (!error) {
-													var user_name  = jQuery(".contact_form #contact_form_username").val();
-													var user_email = jQuery(".contact_form #contact_form_email").val();
-													var user_site  = jQuery(".contact_form #contact_form_site").val();
-													var user_msg   = jQuery(".contact_form #contact_form_message").val();
+													var name  = jQuery(".contact_form #contact_form_username").val();
+													var email = jQuery(".contact_form #contact_form_email").val();
+													var msg   = jQuery(".contact_form #contact_form_message").val();
 													var data = {
 														action: "submit_contact_form",
-														user_name: user_name,
-														user_email: user_email,
-														user_site: user_site,
-														user_msg: user_msg
+														name: name,
+														email: email,
+														msg: msg
 													};
-													jQuery.post("assets/sendmail.html", data, userSubmitFormResponse, "text");
+													jQuery.post("feedback/", data, userSubmitFormResponse, "text");
 												}
 											}
 											
 											function userSubmitFormResponse(response) {
+                                                console.log(JSON.parse(response));
 												var rez = JSON.parse(response);
                                                 var contact_form = jQuery(".contact_form .result");
 												contact_form
 													.toggleClass("sc_infobox_style_error", false)
 													.toggleClass("sc_infobox_style_success", false);
-												if (rez.error == "") {
+												if (rez == "Success") {
 													jQuery(".contact_form .result").addClass("sc_infobox_style_success").html("Your message sent!");
 													setTimeout("jQuery(\'.contact_form .result\').fadeOut(); jQuery(\'.contact_form form\').get(0).reset();", 3000);
 												} else {

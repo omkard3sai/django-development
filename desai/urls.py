@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^feedback/', views.feedback, name='feedback'),
     url(r'^$', views.index, name='index')
 ]

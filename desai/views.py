@@ -1,6 +1,8 @@
 from django.http import HttpResponse
-from .models import Skill, SkillDetail, SkillCategory
+from .models import Skill, SkillDetail, SkillCategory, Feedback
 from django.template import loader
+from django.utils import timezone
+import json
 
 
 def index(request):
@@ -15,3 +17,24 @@ def index(request):
 
     context = {'skill_list': skill_list,'skill_category_list': skill_category_list}
     return HttpResponse(template.render(context, request))
+
+
+def feedback(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        msg = request.POST.get('msg')
+        feebackobject = Feedback(feedback_name=name, feedback_email=email, feedback_msg=msg, feedback_date=timezone.now)
+        feebackobject.save()
+        response_data = 'Success'
+        return HttpResponse(
+            json.dumps(response_data),
+            content_type="application/json"
+        )
+    else:
+        response_data = 'Failed'
+        return HttpResponse(
+            json.dumps(response_data),
+            content_type="application/json"
+        )
+
